@@ -27,5 +27,5 @@ function deleteFromDriverByKey(driver, key) {
 
   newObj = Object.assign({}, driver);
 
-  delete newObj.key;
+  delete newObj[key];
 }
