@@ -25,8 +25,6 @@ function deleteFromDriverByKey(driver, name) {
   key/value pair for the key that was passed in from the driver object.
   This should all not actually mutate the driver passed in.*/
 
-  const newObj = Object.assign({}, driver);
-
   return Object.assign({}, driver, delete driver.name);
 }
 
