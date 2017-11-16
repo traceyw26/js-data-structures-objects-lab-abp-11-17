@@ -20,10 +20,20 @@ function destructivelyUpdateDriverWithKeyAndValue() {
   return Object.assign(driver, {address: "12 Broadway"})
 }
 
-function deleteFromDriverByKey() {
+function deleteFromDriverByKey(driver, key) {
   /*should take in a driver object and a key. It should delete the
   key/value pair for the key that was passed in from the driver object.
   This should all not actually mutate the driver passed in.*/
 
+  const newObj = Object.assign({}, driver);
+
   return Object.assign({}, driver, delete driver.name);
+}
+
+/*function deleteFromDriverByKey (driver, key) {
+  const newObj = Object.assign({}, driver);
+
+  delete newObj[key];
+
+  return newObj;
 }
