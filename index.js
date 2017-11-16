@@ -27,11 +27,3 @@ function deleteFromDriverByKey() {
 
   return Object.assign({}, driver, delete driver.name);
 }
-
-/*function deleteFromDriverByKey (driver, key) {
-  const newObj = Object.assign({}, driver);
-
-  delete newObj[key];
-
-  return newObj;
-}
