@@ -37,7 +37,7 @@ function destructivelyDeleteFromDriverByKey(driver, key) {
   the same as `deleteFromDriverByKey()` but it *should* mutate the `driver`
   passed in.*/
 
-  delete driver.key;
+  delete driver[key];
 
   return driver;
 }
