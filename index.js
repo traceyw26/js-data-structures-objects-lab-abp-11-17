@@ -17,6 +17,7 @@ function destructivelyUpdateDriverWithKeyAndValue() {
   /*this function should work the same as updateDriverWithKeyAndValue()
   but it should mutate the driver parameter passed in.*/
 
-  
+  return Object.assign(driver, {address: "12 Broadway"})
+
 
 }
