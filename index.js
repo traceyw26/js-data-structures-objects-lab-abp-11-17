@@ -21,9 +21,9 @@ function destructivelyUpdateDriverWithKeyAndValue() {
 }
 
 function deleteFromDriverByKey() {
-  /*should take in a driver object and a key. It should delete the 
-  key/value pair for the key that was passed in from the driver object. 
+  /*should take in a driver object and a key. It should delete the
+  key/value pair for the key that was passed in from the driver object.
   This should all not actually mutate the driver passed in.*/
 
-  return Object.assign(driver, delete driver.name);
+  return Object.assign({}, driver, delete driver.name);
 }
